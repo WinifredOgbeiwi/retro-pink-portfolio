@@ -799,7 +799,7 @@ display: flex;
 }
 }
 
-@media (max-width: 1120px) {
+@media (min-width:768px) and (max-width: 1120px)  {
   .about-cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
