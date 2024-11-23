@@ -750,9 +750,8 @@ gap:10px
   .header-container .mobile-nav {
     background-color: #ffc9f0;
     display: none;
-    width: fit-content;
+    width: 100%;
     z-index: 1000;
-    float: right;
     position: relative;
   }
 
@@ -765,12 +764,15 @@ gap:10px
     display: flex;
     flex-direction: column;
     justify-content: end;
+  
+    width: 100%;
   }
 
   .header-container .mobile-nav li {
     font-family: "Handlee", cursive;
     border-bottom: 2px solid black;
     padding: 10px;
+    width: 100%;
   }
 
   /* HERO */
