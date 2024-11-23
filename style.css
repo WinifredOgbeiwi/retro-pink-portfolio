@@ -58,6 +58,9 @@ section {
   width: fit-content;
   margin: 0 auto;
   position: relative;
+  position: sticky;
+  top: 10px;
+  z-index: 1000;
 }
 
 .nav-content {
