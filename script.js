@@ -1,18 +1,32 @@
-// Select all cards
-const cards = document.querySelectorAll(".card");
+// Select elements
+const menuButtonHarmbuger = document.querySelector(".navbar-menu");
+const menuButtonTimes = document.getElementById("navbar-close");
+const mobileNav = document.querySelector(".mobile-nav");
+const harmbuger = document.querySelector(".harmbuger");
+const times = document.querySelector(".times");
 
-// Loop through each card and add event listeners
-cards.forEach((card) => {
-  const flipBtn = card.querySelector(".flip-btn");
-  const closeBtn = card.querySelector(".close-btn");
+const card = document.querySelector(".card");
+const flipBtn = document.querySelector(".flip-btn");
+const closeBtn = document.querySelector(".close-btn");
 
-  // Flip the card when the "Flip" button is clicked
-  flipBtn.addEventListener("click", () => {
-    card.style.transform = "rotateY(180deg)";
-  });
+menuButtonHarmbuger.addEventListener("click", () => {
+  mobileNav.classList.toggle("show");
+  times.classList.toggle("show");
+  harmbuger.classList.toggle("hide");
+});
 
-  // Flip the card back when the "Close" button is clicked
-  closeBtn.addEventListener("click", () => {
-    card.style.transform = "rotateY(0deg)";
-  });
+menuButtonTimes.addEventListener("click", () => {
+  mobileNav.classList.remove("show")
+    harmbuger.classList.remove("hide");
+      times.classList.remove("show");
+});
+flipBtn.addEventListener("click", () => {
+  card.style.transform = "rotateY(180deg)";
+});
+flipBtn.addEventListener("click",()=>{
+    console.log("hell")
+})
+
+closeBtn.addEventListener("click", () => {
+  card.style.transform = "rotateY(0deg)";
 });

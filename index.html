@@ -17,25 +17,54 @@
 <body>
     <div class="body-container">
         <header class="header-container">
-            <div class="logo">
-                <h1>WINIFRED</h1>
-            </div>
-            <nav>
-                <ul>
+            <div class="nav-content">
+                <div class="logo">
+                    <img src="/images/wwwlogo.png" alt="winifred" width="30px">
 
+                </div>
+                <nav>
+                    <ul>
+                        <a href="/">
+                            <li>Home</li>
+                        </a>
+                        <a href="/projects.html">
+                            <li>Project</li>
+                        </a>
+                        <a href="/contact.html">
+                            <li>Contact</li>
+                        </a>
+                        <div class="navbar-menu harmbuger">
+                        <i class="fas fa-bars"></i>
+                        </div>
+                        <div class="navbar-menu times" id="navbar-close">
+                        <i class="fas fa-times"></i>
+                        </div>
+
+                    </ul>
+
+                </nav>
+            </div>
+            <div class="mobile-nav">
+                <ul>
                     <a href="/">
                         <li>Home</li>
                     </a>
                     <a href="#about">
+                        <li>About</li>
+                    </a>
+
+                    <a href="/projects.html">
                         <li>Project</li>
+                    </a>
+                    <a href="/projects.html#work">
+                        <li>Experience</li>
                     </a>
                     <a href="/contact.html">
                         <li>Contact</li>
                     </a>
 
-                    <span class="material-symbols-outlined"> menu </span>
                 </ul>
-            </nav>
+            </div>
         </header>
         <main>
             <!-- HERO SECTION??????????? -->
@@ -53,7 +82,7 @@
                 <div class="hero-content">
                     <div class="hero-side1">
                         <h1>
-                            <span>I design top notch websites</span>
+                            <span>Hi, I am <br>Winifred Imade Ogbeiwi</span>
                             <div class="line"></div>
                         </h1>
                     </div>
@@ -63,7 +92,7 @@
                             be a Software Engineer
                         </p>
 
-                        <button>Contact Me</button>
+                        <a href="/contact.html"><button>Contact Me</button></a>
                     </div>
                 </div>
             </section>
@@ -82,7 +111,7 @@
                                 <button class="flip-btn">Open</button>
                             </div>
                             <div class="front-text">
-                                <h2>FACTS ABOUT ME</h2>
+                                <h2>FACTS</h2>
                             </div>
                         </div>
                         <div class="back close-btn">
@@ -93,6 +122,9 @@
                                 <li>I am Winifred Imade Ogbeiwi.</li>
                                 <li>Computer Engineering student.</li>
                                 <li>Have a law degree and practice lawyer for one year.</li>
+                                <li>I bring a unique perspective to problem-solving and project creation.</li>
+                                <li>I am dedicated to building impactful digital
+                                    solutions.</li>
                             </ul>
                         </div>
                     </div>
@@ -125,8 +157,7 @@
                             </div>
                             <div class="front-text">
                                 <h2>
-                                    ACHIVEMENT/ <br />
-                                    LEADERSHIP
+                                    SKILLS
                                 </h2>
                             </div>
                         </div>
@@ -135,9 +166,9 @@
                                 <button class="close-btn">Close</button>
                             </div>
                             <ul class="card-back-content">
-                                <li>Mentor & Ambassador at Vistula University</li>
-                                <li>Founder of Switch Tribe</li>
-                                <li>Mentee at European Women Mentorship Program</li>
+                                <li>Javascript</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
                             </ul>
                         </div>
                     </div>
@@ -157,22 +188,64 @@
                 <div class="project-cards-container">
                     <!--card1  -->
                     <div class="project-card">
-                        <div>
-                            <img src="./images/my-pic.png" alt="" />
+                        <div class="img">
+                            <img src="./images/project1.png" alt="" />
                         </div>
                         <div class="content">
-                            <h2>TITLE TITLE</h2>
-                            <button>More</button>
+                            <h2>Portfolio Website </h2>
+                            <div>
+                                <div class="langagues">
+                                    <div>HTML</div>
+                                    <div>CSS</div>
+                                    <div>JAVASCRIPT</div>
+                                </div>
+                                <a href="">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+
+
                         </div>
                     </div>
                     <!-- card2 -->
                     <div class="project-card">
-                        <div>
-                            <img src="./images/my-pic.png" alt="" />
+                        <div class="img">
+                            <img src="./images/project2.png" alt="" />
                         </div>
                         <div class="content">
-                            <h2>TITLE TITLE</h2>
-                            <button>More</button>
+                            <h2>Class Project </h2>
+                            <div>
+                                <div class="langagues">
+                                    <div>HTML</div>
+                                    <div>CSS</div>
+                                    <div>JAVASCRIPT</div>
+                                </div>
+                                <a href="">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                    
+                    
+                        </div>
+                    </div>
+                    <!-- card3 -->
+                    <div class="project-card">
+                        <div class="img">
+                            <img src="./images/project3.jpeg" alt="" />
+                        </div>
+                        <div class="content">
+                            <h2>Portfolio Website </h2>
+                            <div>
+                                <div class="langagues">
+                                  
+                                    <div>C#</div>
+                                </div>
+                                <a href="">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                    
+                    
                         </div>
                     </div>
                 </div>
@@ -191,7 +264,7 @@
                 <div class="work-content">
                     <div class="border-line"></div>
                     <div class="border-line2"></div>
-
+                    <!-- experience 1 -->
                     <div class="works">
                         <div class="number one">1</div>
                         <div class="work-info">
@@ -210,16 +283,17 @@
                             <p class="date">2024 - present</p>
                         </div>
                     </div>
-
-                    <!-- experienec3 -->
+                    <!-- experience 3 -->
                     <div class="works">
                         <div class="number three">3</div>
                         <div class="work-info">
-                            <h4>Vistula University</h4>
-                            <p>Student Mentor</p>
+                            <h4>Schneider Electric</h4>
+                            <p>Mentee at Schneider European Women Mentorship Program</p>
                             <p class="date">2024 - present</p>
                         </div>
                     </div>
+
+
 
                     <div></div>
                 </div>
@@ -232,7 +306,7 @@
                     <div class="contact-arrow">
                         <img src="./images/arrow.png" alt="arrow" width="100%" />
                     </div>
-                    <p>Have any project idea? <br>Contact me here</p>
+                    <p>Have any project idea? <br>Contact me</p>
                 </div>
 
                 <div class="contact-content">
@@ -260,22 +334,35 @@
             <div class="border-line-footer"></div>
             <div class="footer-content">
                 <div>
-                    <h3>Winifred</h3>
+                    <div class="logo">
+                        <img src="/images/wwwlogo.png" alt="winifred" width="60px">
+
+                    </div>
 
                     <div class="links-container">
                         <div class="footer-links">
                             <h4>Personal Links</h4>
                             <ul>
-                              <a href="/"><li>Home</li></a>
-                               <a href="#about"><li>About</li></a>
-                            <a href="/contact.html"> <li>Contact</li></a>
+                                <a href="/">
+                                    <li>Home</li>
+                                </a>
+                                <a href="#about">
+                                    <li>About</li>
+                                </a>
+                                <a href="/contact.html">
+                                    <li>Contact</li>
+                                </a>
                             </ul>
                         </div>
                         <div class="footer-links">
                             <h4>Work Links</h4>
                             <ul>
-                            <a href="/projects.html">  <li>Project</li></a>
-                              <a href="/projects.html#work"><li>Work Experience</li></a>
+                                <a href="/projects.html">
+                                    <li>Project</li>
+                                </a>
+                                <a href="/projects.html#work">
+                                    <li>Work Experience</li>
+                                </a>
                             </ul>
                         </div>
                     </div>
@@ -300,8 +387,6 @@
                 </div>
 
             </div>
-
-
         </footer>
     </div>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
