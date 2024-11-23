@@ -5,9 +5,7 @@ const mobileNav = document.querySelector(".mobile-nav");
 const harmbuger = document.querySelector(".harmbuger");
 const times = document.querySelector(".times");
 
-const card = document.querySelector(".card");
-const flipBtn = document.querySelector(".flip-btn");
-const closeBtn = document.querySelector(".close-btn");
+const cards = document.querySelectorAll(".card");
 
 menuButtonHarmbuger.addEventListener("click", () => {
   mobileNav.classList.toggle("show");
@@ -20,13 +18,17 @@ menuButtonTimes.addEventListener("click", () => {
     harmbuger.classList.remove("hide");
       times.classList.remove("show");
 });
-flipBtn.addEventListener("click", () => {
-  card.style.transform = "rotateY(180deg)";
-});
-flipBtn.addEventListener("click",()=>{
-    console.log("hell")
-})
 
-closeBtn.addEventListener("click", () => {
-  card.style.transform = "rotateY(0deg)";
+cards.forEach((card) => {
+  const flipBtn = card.querySelector(".flip-btn");
+  const closeBtn = card.querySelector(".close-btn");
+
+  flipBtn.addEventListener("click", () => {
+    card.style.transform = "rotateY(180deg)";
+  });
+
+
+  closeBtn.addEventListener("click", () => {
+    card.style.transform = "rotateY(0deg)";
+  });
 });

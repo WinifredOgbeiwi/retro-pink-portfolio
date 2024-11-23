@@ -12,6 +12,8 @@ body {
   position: relative;
   max-width: 1440px;
   margin: 0 auto;
+  overflow-x: hidden;
+
 }
 
 .body-container {
@@ -19,6 +21,8 @@ body {
   margin: 0 5rem;
   padding: 3rem 0;
   border-left: 2px solid black;
+    /* overflow-x: hidden; */
+    position: relative;
   border-right: 2px solid black;
 }
 
@@ -275,6 +279,7 @@ button.close-btn {
   height: 100%;
   width: 100%;
   position: absolute;
+
 }
 
 .front {
@@ -317,7 +322,7 @@ button.close-btn {
 .card-back-content li {
   position: relative;
   padding-left: 30px;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .card-back-content li::before {
@@ -373,7 +378,7 @@ button.close-btn {
   height: 80%;
   width: 100%;
   overflow: hidden;
-  
+
 }
 
 .project-card>div>img {
@@ -384,7 +389,7 @@ button.close-btn {
 
 .project-card .content {
   height: 20%;
-margin-top: 10px;
+  margin-top: 10px;
   font-family: "Handlee";
 }
 
@@ -393,26 +398,29 @@ margin-top: 10px;
   font-size: 20px;
   font-weight: 900;
 }
-.project-card .content>div {
-display: flex;
-justify-content: space-between;
 
+.project-card .content>div {
+  display: flex;
+  justify-content: space-between;
+gap:10px
 }
+
 .project-card .content .langagues {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 6px;
 }
+
 .project-card .content .langagues div {
   background-color: #ffc9f0;
   color: black;
   font-size: .5rem;
   border: 2px solid black;
-  padding: .3rem 0.5rem;
+  padding: .3rem;
   border-radius: 4px;
   font-weight: 600;
   width: fit-content;
-  
+
 }
 
 .project-card .content button:hover,
@@ -570,10 +578,10 @@ justify-content: space-between;
 /* FOOTER */
 .border-line-footer {
   position: absolute;
-  width: 107%;
+  width: 85rem;
   height: 2px;
   background-color: black;
-  left: -30px;
+  left: -35px;
 }
 
 .footer-content>div {
@@ -604,11 +612,19 @@ justify-content: space-between;
   color: #ffc9f0;
   border-radius: 4px;
 }
-
+.footer-socials ul li:hover,
+.footer-socials ul li:active {
+  background-color: #ffc9f0;
+  width: fit-content;
+  color: black;
+  border-radius: 4px;
+  border: 2px solid black;
+}
 .footer-socials ul {
   display: flex;
   gap: 2rem;
   width: 100%;
+  
 }
 
 .footer-socials ul li {
@@ -619,6 +635,7 @@ justify-content: space-between;
   font-family: "Handlee", cursive;
   cursor: pointer;
   border-radius: 4px;
+    border: 2px solid black;
 }
 
 @media (max-width: 400px) {
@@ -641,7 +658,9 @@ justify-content: space-between;
   .footer-links ul li {
     padding: 0;
   }
-
+.card-back-content li {
+  font-size: .7rem;
+}
 
 }
 
@@ -703,19 +722,25 @@ justify-content: space-between;
   .navbar-menu {
     display: flex;
   }
-.times{
-  display: none;
-}
-.fa-times, .fa-bars{
-  font-weight: 900;
-  font-size: 20px;
-}
-.times.show {
- display: flex;
-}
-.harmbuger.hide {
-  display: none;
-}
+
+  .times {
+    display: none;
+  }
+
+  .fa-times,
+  .fa-bars {
+    font-weight: 900;
+    font-size: 20px;
+  }
+
+  .times.show {
+    display: flex;
+  }
+
+  .harmbuger.hide {
+    display: none;
+  }
+
   .header-container span {
     display: flex;
     /* padding: 0.5rem 1rem; */
@@ -768,38 +793,60 @@ justify-content: space-between;
   .work-container,
   .contact-container {
     grid-template-columns: 100%;
-    
+
   }
- .project-container > div{
-margin-bottom: 20px;
-}
-    .work-container{
-  margin-top: 1rem;
-}
+
+  .project-container>div {
+    margin-bottom: 20px;
+  }
+
+  .work-container {
+    margin-top: 1rem;
+  }
+
   /*  */
   .work-content {
     margin-left: 0;
     margin-right: 10px;
   }
+
   /* contact */
-    .contact-arrow {
-      width: 50px;
-      margin: 20px 0 20px 100px;
-      transform: rotate(250deg);
-    }
-.contact-content button {
-  width: 50%;
-  margin:1rem auto;
-display: flex;
-  justify-content: center;
+  .contact-arrow {
+    width: 50px;
+    margin: 20px 0 20px 100px;
+    transform: rotate(250deg);
+  }
 
-  padding: 0.6rem 2rem;
-  float:none;
-  transform: rotate(-1deg);
-}
+  .contact-content button {
+    width: 50%;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: center;
+
+    padding: 0.6rem 2rem;
+    float: none;
+    transform: rotate(-1deg);
+  }
+
+  .about-cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
-@media (min-width:768px) and (max-width: 1120px)  {
+@media (max-width: 830px) {
+  .card-back-content li {
+    font-size: .8rem;
+  }
+
+}
+@media (max-width: 1145px) {
+  .card-back-content li {
+    font-size: .8rem;
+  }
+
+}
+@media (min-width:769px) and (max-width: 1120px) {
   .about-cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
