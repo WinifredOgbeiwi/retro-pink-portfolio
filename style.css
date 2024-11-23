@@ -783,7 +783,11 @@ gap:10px
   .hero-side2 {
     width: 100%;
   }
-
+/* about */
+        .about-cards {
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+        }
   /* project cards */
   .project-card {
     height: 20rem;
@@ -821,7 +825,9 @@ gap:10px
     margin: 20px 0 20px 100px;
     transform: rotate(250deg);
   }
-  
+  .contact-container {
+margin-top: 0;
+  }
 
   .contact-content button {
     width: 50%;
@@ -834,10 +840,7 @@ gap:10px
     transform: rotate(-1deg);
   }
 
-  .about-cards {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-  }
+
 }
 
 @media (max-width: 830px) {
