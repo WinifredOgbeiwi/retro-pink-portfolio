@@ -762,7 +762,6 @@ gap:10px
     display: flex;
     flex-direction: column;
     justify-content: end;
-  
     width: 100%;
   }
 
@@ -773,6 +772,10 @@ gap:10px
     width: 100%;
   }
 
+    .header-container .mobile-nav li:hover {
+background-color: white;
+
+    }
   /* HERO */
   .hero-content {
     flex-direction: column;
