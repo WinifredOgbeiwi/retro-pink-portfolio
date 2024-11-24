@@ -206,9 +206,9 @@ section {
   position: relative;
   transition: all 1s linear;
   transform-style: preserve-3d;
-  border: solid 0.25rem black;
+  border: solid 2px black;
   background-color: white;
-  box-shadow: 10px 10px 0 -4px white, 10px 10px 0 0px black;
+  box-shadow: 10px 10px 0 -2px white, 10px 10px 0 0px black;
 }
 
 .card-header {
@@ -231,28 +231,23 @@ section {
   background-color: #eecd56;
 }
 
+.card1,.card2,.card3{
+box-shadow: 10px 10px 0 -4px white, 10px 10px 0 0px black;
+}
 .card1 {
   border: solid 0.25rem black;
-  border: solid 0.25rem black;
   background-color: #9ddcff;
-  box-shadow: 10px 10px 0 -4px white, 10px 10px 0 0px black;
-  box-shadow: 10px 10px 0 -4px white, 10px 10px 0 0px black;
+  
 }
 
 .card2 {
   border: solid 0.25rem black;
-  border: solid 0.25rem black;
   background-color: #ffc9f0;
-  box-shadow: 10px 10px 0 -4px white, 10px 10px 0 0px black;
-  box-shadow: 10px 10px 0 -4px white, 10px 10px 0 0px black;
 }
 
 .card3 {
-  border: solid 0.25rem #eecd56;
   background-color: #ffe68c;
   border: solid 0.25rem black;
-  box-shadow: 10px 10px 0 -4px white, 10px 10px 0 0px black;
-  box-shadow: 10px 10px 0 -4px white, 10px 10px 0 0px black;
 }
 
 .flip-btn,
@@ -279,7 +274,6 @@ button.close-btn {
   height: 100%;
   width: 100%;
   position: absolute;
-
 }
 
 .front {
@@ -312,11 +306,6 @@ button.close-btn {
   background-size: cover;
   background-position: center;
   width: 100%;
-}
-
-.card-2~.close-btn {
-  position: absolute;
-  top: 0;
 }
 
 .card-back-content li {
@@ -368,7 +357,7 @@ button.close-btn {
 
 .project-card {
   height: 400px;
-  border: 4px solid black;
+  border: 2px solid black;
   padding: 20px;
   position: relative;
   background-color: white;
@@ -417,7 +406,7 @@ gap:10px
   font-size: .5rem;
   border: 2px solid black;
   padding: .3rem;
-  border-radius: 4px;
+  border-radius: 3px;
   font-weight: 600;
   width: fit-content;
 
@@ -474,7 +463,7 @@ gap:10px
   align-items: center;
   justify-content: center;
   border: 2px solid black;
-  border-radius: 4px;
+  border-radius: 3px;
 }
 
 .work-content .number.one {
@@ -608,14 +597,24 @@ gap:10px
   background-color: black;
   width: fit-content;
   color: #ffc9f0;
-  border-radius: 4px;
+  border-radius: 3px;
+}
+.footer-socials ul li {
+  background-color: black;
+  color: #ffc9f0;
+  padding: 0.3rem 0.7rem;
+  font-weight: 900;
+  font-family: "Handlee", cursive;
+  cursor: pointer;
+  border-radius: 3px;
+  border: 2px solid black;
 }
 .footer-socials ul li:hover,
 .footer-socials ul li:active {
   background-color: #ffc9f0;
   width: fit-content;
   color: black;
-  border-radius: 4px;
+  border-radius: 3px;
   border: 2px solid black;
 }
 .footer-socials ul {
@@ -625,16 +624,7 @@ gap:10px
   
 }
 
-.footer-socials ul li {
-  background-color: black;
-  color: #ffc9f0;
-  padding: 0.3rem 0.7rem;
-  font-weight: 900;
-  font-family: "Handlee", cursive;
-  cursor: pointer;
-  border-radius: 4px;
-    border: 2px solid black;
-}
+
 
 @media (max-width: 400px) {
   .footer-socials ul {
@@ -837,7 +827,6 @@ margin-top: 0;
     margin: 1rem auto;
     display: flex;
     justify-content: center;
-
     padding: 0.6rem 2rem;
     float: none;
     transform: rotate(-1deg);
