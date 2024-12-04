@@ -75,42 +75,42 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 document.addEventListener("DOMContentLoaded", () => {
-  const headers = document.querySelectorAll(".activities-header h4");
-  const items = document.querySelectorAll(".activity-item");
+    const headers = document.querySelectorAll(".activities-header h4");
+    const items = document.querySelectorAll(".activity-item");
 
-  // Function to set "All" as the default view
-  function showDefault() {
-    headers.forEach((header) => header.classList.remove("active"));
-    document.querySelector('[data-category="all"]').classList.add("active");
-    items.forEach((item) => item.classList.add("active"));
-  }
+    // Function to set "All" as the default view
+    function showDefault() {
+        headers.forEach(header => header.classList.remove("active"));
+        document.querySelector('[data-category="all"]').classList.add("active");
+        items.forEach(item => item.classList.add("active"));
+    }
 
-  // Initialize the default view
-  showDefault();
+    // Initialize the default view
+    showDefault();
 
-  headers.forEach((header) => {
-    header.addEventListener("click", () => {
-      const category = header.getAttribute("data-category");
+    headers.forEach(header => {
+        header.addEventListener("click", () => {
+            const category = header.getAttribute("data-category");
 
-      // Remove active class from all headers
-      headers.forEach((h) => h.classList.remove("active"));
+            // Remove active class from all headers
+            headers.forEach(h => h.classList.remove("active"));
 
-      // Add active class to the clicked header
-      header.classList.add("active");
+            // Add active class to the clicked header
+            header.classList.add("active");
 
-      // Hide all items initially
-      items.forEach((item) => item.classList.remove("active"));
+            // Hide all items initially
+            items.forEach(item => item.classList.remove("active"));
 
-      // Show relevant items
-      if (category === "all") {
-        items.forEach((item) => item.classList.add("active"));
-      } else {
-        items.forEach((item) => {
-          if (item.getAttribute("data-category") === category) {
-            item.classList.add("active");
-          }
+            // Show relevant items
+            if (category === "all") {
+                items.forEach(item => item.classList.add("active"));
+            } else {
+                items.forEach(item => {
+                    if (item.getAttribute("data-category") === category) {
+                        item.classList.add("active");
+                    }
+                });
+            }
         });
-      }
     });
-  });
 });

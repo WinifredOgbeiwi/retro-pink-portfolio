@@ -628,22 +628,22 @@ textarea {
 
 .activities-header {
   display: flex;
-border-top: 2px solid black;
-border-bottom: 2px solid black;
-border-right: 2px solid black;
-    width: fit-content;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: fit-content;
 }
 
 .activities-header h4 {
-  padding: 8px 25px;
-    transition: background-color 0.3s, color 0.3s;
-    cursor: pointer;
-      border-left: 2px solid black;
+  transition: background-color 0.3s, color 0.3s;
+  cursor: pointer;
 }
 
-.activities-header h4:hover,.activities-header h4.active {
-  background-color: black;
-  color: #ffc9f0;
+.activities-header h4:hover {
+  border-bottom: 2px solid #f384d4;
+}
+
+.activities-header h4.active {
+  border-bottom: 2px solid #f384d4;
 }
 
 .activity-container {
@@ -662,18 +662,20 @@ border-right: 2px solid black;
   overflow: hidden;
 
 }
+
 .activity-item .img {
-height: 10rem;
-width: 100%;
-object-fit: cover;
+  height: 15rem;
+  width: 100%;
+  object-fit: cover;
 }
 
 .activity-item .img img {
   width: 100%;
-    height: 100%;
+  height: 100%;
   object-fit: cover;
 }
-.activity-item p{
+
+.activity-item p {
   padding: 20px;
   font-family: "Handlee", cursive;
 }
@@ -754,6 +756,9 @@ object-fit: cover;
 
 
 
+
+/* ======================================== RESPONSIVENESS ======================================== */
+
 @media (max-width: 400px) {
   .footer-socials ul {
     flex-direction: column;
@@ -813,6 +818,10 @@ object-fit: cover;
 
   section {
     margin: 3rem 1.5rem;
+  }
+
+  .activities-header h4 {
+    font-size: 16px;
   }
 }
 
@@ -920,7 +929,8 @@ object-fit: cover;
 
   .project-container,
   .work-container,
-  .contact-container {
+  .contact-container,
+  .activities-container {
     grid-template-columns: 100%;
 
   }
@@ -957,15 +967,39 @@ object-fit: cover;
     margin-top: 0;
   }
 
+  /* ACTIVTIES */
 
+  .activity-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
 
+  .activites-content {
+    margin-top: 25px;
+  }
+
+  .activity-item {
+    width: 100%;
+  }
 }
 
 @media (max-width: 830px) {
   .card-back-content li {
     font-size: .8rem;
   }
+}
 
+@media (max-width: 950px) {
+  .activities-header h4 {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+}
+
+/* */
+@media (min-width:769px) and (max-width: 1000px) {
+  .activity-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 1145px) {
