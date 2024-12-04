@@ -972,6 +972,10 @@ textarea {
   .activity-container {
     grid-template-columns: repeat(1, 1fr);
   }
+    .activities-header {
+      gap: 10px;
+ 
+    }
 
   .activites-content {
     margin-top: 25px;
