@@ -1,270 +1,298 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Handlee&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <title>Winifred's Portfolio</title>
-  </head>
 
-  <body>
-    <div class="body-container">
-      <header class="header-container">
-        <div class="nav-content">
-          <div class="logo">
-            <img src="/images/wwwlogo.png" alt="winifred" width="30px" />
-          </div>
-          <nav>
-            <ul>
-              <a href="/">
-                <li>Home</li>
-              </a>
-              <a href="/projects.html">
-                <li>Project</li>
-              </a>
-              <a href="/contact.html">
-                <li>Contact</li>
-              </a>
-              <div class="navbar-menu harmbuger">
-                <i class="fas fa-bars"></i>
-              </div>
-              <div class="navbar-menu times" id="navbar-close">
-                <i class="fas fa-times"></i>
-              </div>
-            </ul>
-          </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Handlee&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet" />
+  <title>Winifred's Portfolio</title>
+</head>
+
+<body>
+  <div class="body-container">
+    <header class="header-container">
+      <div class="nav-content">
+        <div class="logo">
+          <img src="/images/wwwlogo.png" alt="winifred" width="30px" />
         </div>
-        <div class="mobile-nav">
+        <nav>
           <ul>
             <a href="/">
               <li>Home</li>
             </a>
-            <a href="/#about">
-              <li>About</li>
-            </a>
-
             <a href="/projects.html">
-              <li>Project</li>
+              <li class="present">Project</li>
             </a>
-            <a href="/projects.html#work">
-              <li>Experience</li>
+            <a href="/activities.html">
+              <li>Activities</li>
             </a>
             <a href="/contact.html">
               <li>Contact</li>
             </a>
+            <div class="navbar-menu harmbuger">
+              <i class="fas fa-bars"></i>
+            </div>
+            <div class="navbar-menu times" id="navbar-close">
+              <i class="fas fa-times"></i>
+            </div>
+          </ul>
+        </nav>
+      </div>
+      <div class="mobile-nav">
+        <ul>
+          <a href="/">
+            <li>Home</li>
+          </a>
+          <a href="/#about">
+            <li>About</li>
+          </a>
+
+          <a href="/projects.html">
+            <li>Project</li>
+          </a>
+          <a href="/projects.html#work">
+            <li>Experience</li>
+          </a>
+          <a href="/activities.html">
+            <li>Activities</li>
+          </a>
+          <a href="/contact.html">
+            <li>Contact</li>
+          </a>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <!-- PROJECTS -->
+      <section class="project-container">
+        <div>
+          <p class="sections-heading">Projects</p>
+          <div class="project-arrow">
+            <img src="./images/arrow.png" alt="arrow" width="100%" />
+          </div>
+          <p>View my Projects</p>
+        </div>
+        <!-- PROJECT1 START -->
+        <div class="project-cards-container">
+          <!--card1  -->
+          <div class="project-card">
+            <div class="img">
+              <img src="./images/localhost_3000_ (10).png" alt="" />
+            </div>
+            <div class="content">
+              <h2>MoodBoard</h2>
+              <div>
+                <div class="langagues">
+                  <div>Nextjs</div>
+                  <div>Tailwind</div>
+                  <div>Firebase</div>
+                </div>
+                <a href="https://moodboard-winifredogbeiwis-projects.vercel.app/">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+              <p>Personal Project to help you track your mood</p>
+            </div>
+          </div>
+
+          <!-- card2 -->
+          <div class="project-card">
+            <div class="img">
+              <img src="/images/cetigroup.pl_.png" alt="" />
+            </div>
+            <div class="content">
+              <h2>Ceti</h2>
+              <div>
+                <div class="langagues">
+                  <div>Reactjs</div>
+                  <div>Tailwind</div>
+                  <div>i18next</div>
+                </div>
+                <a href="https://moodboard-winifredogbeiwis-projects.vercel.app/">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+              <p>Ceti Group is a real life consulting firm</p>
+            </div>
+          </div>
+
+          <!--card3  -->
+          <div class="project-card">
+            <div class="img">
+              <img src="./images/project1.png" alt="" />
+            </div>
+            <div class="content">
+              <h2>Portfolio Website</h2>
+              <div>
+                <div class="langagues">
+                  <div>HTML</div>
+                  <div>CSS</div>
+                  <div>JAVASCRIPT</div>
+                </div>
+                <a href="https://winifred.vercel.app">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+                  <p>Personal Project - Portfolio</p>
+            </div>
+          </div>
+         
+         
+          <!-- card4-->
+          <div class="project-card">
+            <div class="img">
+              <img src="./images/project3.jpeg" alt="" />
+            </div>
+            <div class="content">
+              <h2>Grocery shop</h2>
+              <div>
+                <div class="langagues">
+                  <div>C#</div>
+                  <div>Windows Form</div>
+                  <div>.Net</div>
+                </div>
+                <a href="https://github.com/WinifredOgbeiwi/grocery-store-ecommerce">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+                  <p> School Task- OOP:C#</p>
+            </div>
+          </div>
+
+          <!-- card5 -->
+          <div class="project-card">
+            <div class="img">
+              <img src="./images/project4.jpeg" alt="" />
+            </div>
+            <div class="content">
+              <h2>Email Generator</h2>
+              <div>
+                <div class="langagues">
+                  <div>C#</div>
+                  <div>Windows Form</div>
+                  <div>.Net</div>
+                </div>
+                <a href=" https://github.com/WinifredOgbeiwi/email-generator">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+              <p>Personal Project - OOP</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Work experience -->
+      <section id="work" class="work-container">
+        <div>
+          <p class="sections-heading">Work Experience</p>
+          <div class="work-arrow">
+            <img src="./images/arrow.png" alt="arrow" width="100%" />
+          </div>
+          <p>View my Projects</p>
+        </div>
+
+        <div class="work-content">
+          <div class="border-line"></div>
+          <div class="border-line2"></div>
+          <!-- experience 1 -->
+          <div class="works">
+            <div class="number one">1</div>
+            <div class="work-info">
+              <h4>Frontend Freelancer</h4>
+              <p>Build websites and Portfolios</p>
+              <p>2024 - present</p>
+            </div>
+          </div>
+
+          <!-- experience 2 -->
+          <div class="works">
+            <div class="number two">2</div>
+            <div class="work-info">
+              <h4>Vistula University</h4>
+              <p>Student Ambassdor/Mentor</p>
+              <p class="date">2024 - present</p>
+            </div>
+          </div>
+          <!-- experience 3 -->
+          <div class="works">
+            <div class="number three">3</div>
+            <div class="work-info">
+              <h4>Schneider Electric</h4>
+              <p>Mentee at Schneider EWMP</p>
+              <p class="date">2024 - present</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer class="footer-container">
+      <div class="border-line-footer"></div>
+      <div class="footer-content">
+        <div>
+          <div class="logo">
+            <img src="/images/wwwlogo.png" alt="winifred" width="60px" />
+          </div>
+
+          <div class="links-container">
+            <div class="footer-links">
+              <h4>Personal Links</h4>
+              <ul>
+                <a href="/">
+                  <li>Home</li>
+                </a>
+                <a href="/index.html#about">
+                  <li>About</li>
+                </a>
+                <a href="/contact.html">
+                  <li>Contact</li>
+                </a>
+              </ul>
+            </div>
+            <div class="footer-links">
+              <h4>Work Links</h4>
+              <ul>
+                <a href="/projects.html">
+                  <li>Project</li>
+                </a>
+                <a href="/projects.html#work">
+                  <li>Work Experience</li>
+                </a>
+                <a href="/activities.html">
+                  <li>Activities</li>
+                </a>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-socials">
+          <ul>
+            <a href="mailto:officialswitchtribe@gmail.com" target="_blank">
+              <li>Email</li>
+            </a>
+            <a href="https://www.linkedin.com/in/winifred-imade-ogbeiwi/" target="_blank">
+              <li>LinkedIn</li>
+            </a>
+            <a href="https://github.com/winifredogbeiwi" target="_blank">
+              <li>Github</li>
+            </a>
+            <a href="https://twitter.com/winifredogbeiwi" target="_blank">
+              <li>Twitter</li>
+            </a>
           </ul>
         </div>
-      </header>
-      <main>
-        <!-- PROJECTS -->
-        <section class="project-container">
-          <div>
-            <p class="sections-heading">Projects</p>
-            <div class="project-arrow">
-              <img src="./images/arrow.png" alt="arrow" width="100%" />
-            </div>
-            <p>View my Projects</p>
-          </div>
-          <!-- PROJECT1 START -->
-          <div class="project-cards-container">
-            <!--card1  -->
-            <div class="project-card">
-              <div class="img">
-                <img src="./images/project1.png" alt="" />
-              </div>
-              <div class="content">
-                <h2>Portfolio Website</h2>
-                <div>
-                  <div class="langagues">
-                    <div>HTML</div>
-                    <div>CSS</div>
-                    <div>JAVASCRIPT</div>
-                  </div>
-                  <a href="https://winifred.vercel.app">
-                    <i class="fas fa-external-link-alt"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <!-- card2 -->
-            <div class="project-card">
-              <div class="img">
-                <img src="./images/project2.png" alt="" />
-              </div>
-              <div class="content">
-                <h2>Class Project</h2>
-                <div>
-                  <div class="langagues">
-                    <div>HTML</div>
-                    <div>CSS</div>
-                  </div>
-                  <a href="https://codepen.io/winifred-ogbeiwi/pen/poMardq">
-                    <i class="fas fa-external-link-alt"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <!-- card3 -->
-            <div class="project-card">
-              <div class="img">
-                <img src="./images/project3.jpeg" alt="" />
-              </div>
-              <div class="content">
-                <h2>Grocery shop</h2>
-                <div>
-                  <div class="langagues">
-                    <div>C#</div>
-                    <div>Windows Form</div>
-                    <div>.Net</div>
-                  </div>
-                  <a
-                    href="https://github.com/WinifredOgbeiwi/grocery-store-ecommerce"
-                  >
-                    <i class="fas fa-external-link-alt"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="./script.js"></script>
+</body>
 
-            <!-- card4 -->
-            <div class="project-card">
-              <div class="img">
-                <img src="./images/project4.jpeg" alt="" />
-              </div>
-              <div class="content">
-                <h2>Email Generator</h2>
-                <div>
-                  <div class="langagues">
-                    <div>C#</div>
-                    <div>Windows Form</div>
-                    <div>.Net</div>
-                  </div>
-                  <a href=" https://github.com/WinifredOgbeiwi/email-generator">
-                    <i class="fas fa-external-link-alt"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Work experience -->
-        <section id="work" class="work-container">
-          <div>
-            <p class="sections-heading">Work Experience</p>
-            <div class="work-arrow">
-              <img src="./images/arrow.png" alt="arrow" width="100%" />
-            </div>
-            <p>View my Projects</p>
-          </div>
-
-          <div class="work-content">
-            <div class="border-line"></div>
-            <div class="border-line2"></div>
-            <!-- experience 1 -->
-            <div class="works">
-              <div class="number one">1</div>
-              <div class="work-info">
-                <h4>Frontend Freelancer</h4>
-                <p>Build websites and Portfolios</p>
-                <p>2024 - present</p>
-              </div>
-            </div>
-
-            <!-- experience 2 -->
-            <div class="works">
-              <div class="number two">2</div>
-              <div class="work-info">
-                <h4>Vistula University</h4>
-                <p>Student Ambassdor/Mentor</p>
-                <p class="date">2024 - present</p>
-              </div>
-            </div>
-            <!-- experience 3 -->
-            <div class="works">
-              <div class="number three">3</div>
-              <div class="work-info">
-                <h4>Schneider Electric</h4>
-                <p>Mentee at Schneider EWMP</p>
-                <p class="date">2024 - present</p>
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
-      <!-- footer -->
-      <footer class="footer-container">
-        <div class="border-line-footer"></div>
-        <div class="footer-content">
-          <div>
-            <div class="logo">
-              <img src="/images/wwwlogo.png" alt="winifred" width="60px" />
-            </div>
-
-            <div class="links-container">
-              <div class="footer-links">
-                <h4>Personal Links</h4>
-                <ul>
-                  <a href="/">
-                    <li>Home</li>
-                  </a>
-                  <a href="/index.html#about">
-                    <li>About</li>
-                  </a>
-                  <a href="/contact.html">
-                    <li>Contact</li>
-                  </a>
-                </ul>
-              </div>
-              <div class="footer-links">
-                <h4>Work Links</h4>
-                <ul>
-                  <a href="/projects.html">
-                    <li>Project</li>
-                  </a>
-                  <a href="/projects.html#work">
-                    <li>Work Experience</li>
-                  </a>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="footer-socials">
-            <ul>
-              <a href="mailto:officialswitchtribe@gmail.com" target="_blank">
-                <li>Email</li>
-              </a>
-              <a
-                href="https://www.linkedin.com/in/winifred-imade-ogbeiwi/"
-                target="_blank"
-              >
-                <li>LinkedIn</li>
-              </a>
-              <a href="https://github.com/winifredogbeiwi" target="_blank">
-                <li>Github</li>
-              </a>
-              <a href="https://twitter.com/winifredogbeiwi" target="_blank">
-                <li>Twitter</li>
-              </a>
-            </ul>
-          </div>
-        </div>
-      </footer>
-    </div>
-    <script
-      src="https://kit.fontawesome.com/a076d05399.js"
-      crossorigin="anonymous"
-    ></script>
-    <script type="text/javascript" src="./script.js"></script>
-  </body>
 </html>

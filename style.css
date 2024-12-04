@@ -16,14 +16,65 @@ body {
 
 }
 
+.greeting {
+  display: none;
+  position: absolute;
+  opacity: 0;
+  animation: fadeInOut 3s ease-in-out;
+  color: white;
+}
+
+#greetings-container {
+  text-align: center;
+  font-size: 8rem;
+  position: relative;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.body-container.main {
+  animation: fadeIn 1s ease-in-out;
+}
+
 .body-container {
   background-image: url("./images/bg2.jpeg");
   margin: 0 5rem;
   padding: 3rem 0;
   border-left: 2px solid black;
-  /* overflow-x: hidden; */
   position: relative;
   border-right: 2px solid black;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 a {
@@ -101,6 +152,11 @@ section {
   background-color: #ffc9f0;
 }
 
+.header-container li.present,
+.header-container span.present {
+  background-color: #ffc9f0;
+}
+
 .navbar-menu,
 .header-container .mobile-nav ul {
   display: none;
@@ -164,7 +220,7 @@ section {
   font-size: 1.2rem;
 }
 
-.hero-side2 button {
+.button {
   background-color: black;
   border: none;
   color: white;
@@ -174,7 +230,7 @@ section {
   transform: rotate(3deg);
 }
 
-.hero-side2 button:hover {
+.button:hover {
   background-color: #ffc9f0;
   border: 2px solid black;
   color: black;
@@ -333,10 +389,20 @@ button.close-btn {
 /* PROJECTS */
 .project-container,
 .work-container,
-.contact-container {
+.contact-container,
+.activities-container {
   margin-top: 7rem;
   display: grid;
   grid-template-columns: 20% 80%;
+}
+
+
+
+.projects-items-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
 }
 
 .project-cards-container {
@@ -359,9 +425,10 @@ button.close-btn {
 /* project card */
 
 .project-card {
-  height: 400px;
+  height: 450px;
   border: 2px solid black;
   padding: 20px;
+  padding-bottom: 30px;
   position: relative;
   background-color: white;
 }
@@ -415,12 +482,17 @@ button.close-btn {
 
 }
 
-.project-card .content button:hover,
-.project-card .content button:active {
-  background-color: black;
-  border: none;
-  color: #ffc9f0;
+.project-card .content p {
+  font-family: "Handlee", cursive;
+  text-wrap: wrap;
+  margin-top: 4px;
+  font-size: 10px;
+  text-overflow: ellipsis;
+
+  overflow: hidden;
 }
+
+
 
 /* WORK SECTION */
 
@@ -552,21 +624,70 @@ textarea {
   padding-left: 10px;
 }
 
-.contact-content button {
-  background-color: black;
-  color: white;
-  border: 2px solid black;
-  margin: 2rem 5rem;
-  padding: 0.6rem 2rem;
-  float: right;
-  transform: rotate(-5deg);
+/* ACTIVITIES */
+
+.activities-header {
+  display: flex;
+border-top: 2px solid black;
+border-bottom: 2px solid black;
+border-right: 2px solid black;
+    width: fit-content;
 }
 
-.contact-content button:hover,
-.contact-content button:active {
-  background-color: #ffc9f0;
-  color: black;
+.activities-header h4 {
+  padding: 8px 25px;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+      border-left: 2px solid black;
 }
+
+.activities-header h4:hover,.activities-header h4.active {
+  background-color: black;
+  color: #ffc9f0;
+}
+
+.activity-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.activity-item {
+  border: 2px solid black;
+  /* padding: 20px; */
+  background-color: white;
+  margin-top: 2rem;
+  height: fit-content;
+  width: fit-content;
+  overflow: hidden;
+
+}
+.activity-item .img {
+height: 10rem;
+width: 100%;
+object-fit: cover;
+}
+
+.activity-item .img img {
+  width: 100%;
+    height: 100%;
+  object-fit: cover;
+}
+.activity-item p{
+  padding: 20px;
+  font-family: "Handlee", cursive;
+}
+
+/* Hide all items by default */
+.activity-item {
+  display: none;
+}
+
+/* Show items with the active category */
+.activity-item.active {
+  display: block;
+}
+
 
 /* FOOTER */
 .border-line-footer {
@@ -580,6 +701,7 @@ textarea {
   justify-content: space-between;
   width: 100%;
   padding: 2rem;
+  gap: 20px;
 }
 
 .footer-content>div li {
@@ -627,7 +749,6 @@ textarea {
 .footer-socials ul {
   display: flex;
   gap: 2rem;
-  width: 100%;
 
 }
 
@@ -836,15 +957,6 @@ textarea {
     margin-top: 0;
   }
 
-  .contact-content button {
-    width: 50%;
-    margin: 1rem auto;
-    display: flex;
-    justify-content: center;
-    padding: 0.6rem 2rem;
-    float: none;
-    transform: rotate(-1deg);
-  }
 
 
 }
