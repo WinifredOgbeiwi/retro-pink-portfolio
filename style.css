@@ -657,8 +657,6 @@ textarea {
   /* padding: 20px; */
   background-color: white;
   margin-top: 2rem;
-  height: fit-content;
-  width: fit-content;
   overflow: hidden;
 
 }
