@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
   padding: 0;
   margin: 0;
@@ -5,7 +7,7 @@
   transition-duration: 0.5s;
   scroll-behavior: smooth;
   color: black;
-  font-family: "Inter", sans-serif;
+  font-family: "Poppins", serif;
 }
 
 body {
@@ -95,13 +97,14 @@ section {
   position: absolute;
   width: 10rem;
   height: 25px;
-  background-color: #ffc9f0;
-  top: 5.5rem;
+  /* background-color: #f9d9bc; */
+   background-color: #f9d9bc;
+  top: 7rem;
   left: 1rem;
 }
 
 .sections-heading {
-  background-color: #ffc9f0;
+  background-color: #f9d9bc;
   width: fit-content;
   padding: 2px 5px;
   font-size: 1.5rem;
@@ -149,12 +152,12 @@ section {
 
 .header-container li:hover,
 .header-container span:hover {
-  background-color: #ffc9f0;
+  background-color: #f9d9bc;
 }
 
 .header-container li.present,
 .header-container span.present {
-  background-color: #ffc9f0;
+  background-color: #f9d9bc;
 }
 
 .navbar-menu,
@@ -179,7 +182,7 @@ section {
 }
 
 .ainmated p {
-  background-color: #ffc9f0;
+  background-color: #f9d9bc;
   height: fit-content;
   transform: rotate(-6deg);
   margin-top: 25px;
@@ -231,7 +234,7 @@ section {
 }
 
 .button:hover {
-  background-color: #ffc9f0;
+  background-color: #f9d9bc;
   border: 2px solid black;
   color: black;
 }
@@ -248,14 +251,38 @@ section {
 }
 
 .about-cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex; 
+   border:3px solid black;
   justify-content: space-between;
-  gap: 50px;
+  align-items: center;
   margin-top: 30px;
   width: 100%;
   height: 100%;
 }
+.about-cards .img{
+  width: 50%;
+  overflow: hidden;
+}
+.about-cards .img img{
+width: 100%;
+object-fit: cover;
+}
+.about-cards .paragraph{
+  width: 50%;
+  padding: 10px 20px;
+      border-left: 3px solid black;
+}
+.about-cards .paragraph p{
+  margin-bottom: 1rem;
+  font-size: .8rem;
+}
+
+.about-cards .paragraph p span {
+font-weight: 700;
+color: #fc7c03;
+text-decoration: underline;
+}
+
 
 .card {
   height: 20rem;
@@ -301,7 +328,7 @@ section {
 
 .card2 {
   border: solid 0.25rem black;
-  background-color: #ffc9f0;
+  background-color: #f9d9bc;
 }
 
 .card3 {
@@ -471,7 +498,7 @@ button.close-btn {
 }
 
 .project-card .content .langagues div {
-  background-color: #ffc9f0;
+  background-color: #f9d9bc;
   color: black;
   font-size: .5rem;
   border: 2px solid black;
@@ -546,7 +573,7 @@ button.close-btn {
 }
 
 .work-content .number.two {
-  background-color: #ffc9f0;
+  background-color: #f9d9bc;
 }
 
 .work-content .number.three {
@@ -605,7 +632,7 @@ textarea {
 }
 
 .form-input:nth-child(2) label {
-  background-color: #ffc9f0;
+  background-color: #f9d9bc;
 }
 
 .form-input:nth-child(3) label {
@@ -722,13 +749,13 @@ textarea {
 .footer-links ul li:active {
   background-color: black;
   width: fit-content;
-  color: #ffc9f0;
+  color: #f9d9bc;
   border-radius: 3px;
 }
 
 .footer-socials ul li {
   background-color: black;
-  color: #ffc9f0;
+  color: #f9d9bc;
   padding: 0.3rem 0.7rem;
   font-weight: 900;
   font-family: "Handlee", cursive;
@@ -739,7 +766,7 @@ textarea {
 
 .footer-socials ul li:hover,
 .footer-socials ul li:active {
-  background-color: #ffc9f0;
+  background-color: #f9d9bc;
   width: fit-content;
   color: black;
   border-radius: 3px;
@@ -872,7 +899,7 @@ textarea {
 
   /* NAVBAR MOBILE */
   .header-container .mobile-nav {
-    background-color: #ffc9f0;
+    background-color: #f9d9bc;
     display: none;
     width: 100%;
     z-index: 1000;
@@ -1021,7 +1048,7 @@ textarea {
 
     width: 100%;
     height: 25px;
-    background-color: #ffc9f0;
+    background-color: #f9d9bc;
     top: 5.5rem;
     left: 1rem;
   }
