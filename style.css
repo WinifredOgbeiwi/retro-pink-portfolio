@@ -95,12 +95,12 @@ section {
 /* COMMON CSS */
 .line {
   position: absolute;
-  width: 10rem;
+  width: 15rem;
   height: 25px;
   /* background-color: #f9d9bc; */
    background-color: #f9d9bc;
-  top: 7rem;
-  left: 1rem;
+  top: 2.5rem;
+  left: 3rem;
 }
 
 .sections-heading {
@@ -193,27 +193,27 @@ section {
 }
 
 .hero-content {
-  display: flex;
+  /* display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; */
   margin-top: 30px;
   gap: 20px;
 }
 
-.hero-side1,
+/* .hero-side1,
 .hero-side2 {
   width: 50%;
-}
+} */
 
 .hero-side1 h1 {
   position: relative;
+  font-size: 5rem;
+    z-index: 100;
+    position: relative;
+    line-height: 1;
+    margin-bottom: .9rem;
 }
 
-.hero-side1 h1 span {
-  font-size: 3rem;
-  z-index: 100;
-  position: relative;
-}
 
 .hero-container .img-icon {
   width: 80px;
@@ -222,7 +222,19 @@ section {
 .hero-side2 p {
   font-size: 1.2rem;
 }
+.social-icons {
+display: flex;
+gap: 2rem;
+margin: .5rem 0;
+}
 
+.social-icons i:hover {
+color:#f9d9bc ;
+
+}
+.social-icons i{
+font-size: 1.6rem;
+}
 .button {
   background-color: black;
   border: none;
@@ -260,7 +272,7 @@ section {
   height: 100%;
 }
 .about-cards .img{
-  width: 50%;
+  /* width: 50%; */
   overflow: hidden;
 }
 .about-cards .img img{
@@ -268,7 +280,7 @@ width: 100%;
 object-fit: cover;
 }
 .about-cards .paragraph{
-  width: 50%;
+  /* width: 50%; */
   padding: 10px 20px;
       border-left: 3px solid black;
 }
@@ -1044,12 +1056,12 @@ textarea {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .line {
+  /* .line {
 
     width: 100%;
     height: 25px;
     background-color: #f9d9bc;
     top: 5.5rem;
     left: 1rem;
-  }
+  } */
 }
