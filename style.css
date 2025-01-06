@@ -193,17 +193,17 @@ section {
 }
 
 .hero-content {
-  /* display: flex;
+  display: flex;
   justify-content: space-between;
-  align-items: center; */
+  align-items: center;
   margin-top: 30px;
   gap: 20px;
 }
 
-/* .hero-side1,
+.hero-side1,
 .hero-side2 {
   width: 50%;
-} */
+}
 
 .hero-side1 h1 {
   position: relative;
